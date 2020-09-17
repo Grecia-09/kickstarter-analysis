@@ -11,7 +11,7 @@ The first thing I noticed was that the theater was the most successful category 
 **Figure 1. ** Stacked column chart of the outcome of the different categories of campaigns in US. The highest column shows us that theater is the most popular and has the most successful outcomes compares to the rest of categories.
 --
 Each category also has their own list of subcategories, it is really important to know which of the subcategory of theater has been more successful. I filtered again to obtain information about US and see that plays have the highest of successful outcomes. See Figure 2. for reference.
-![picture_2](Users⁩/insiktuser⁩/⁨Desktop⁩/Class Folder/Analysis Projects⁩/⁨Crowdfunfing Analysis⁩/picture_2.png)
+![picture2](Users⁩/insiktuser⁩/⁨Desktop⁩/Class Folder/Analysis Projects⁩/⁨Crowdfunfing Analysis⁩/picture2.png)
 **Figure 2. ** Stacked column chart of the outcome of the different subcategories of theater in US. The highest column shows us that plays are have the most successful outcomes compares to the rest of subcategories.
 --
 I wanted to provide you with the best time of the year to start a campaign, to do this I used the launched and deadline dates to calculate the length of fundraising campaigns tied with the outcome of the theater’s campaigns. See Figure 3. for reference.
