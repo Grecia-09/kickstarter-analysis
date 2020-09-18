@@ -1,29 +1,33 @@
 # An analysis of Kickstarter Campaigns
-Performing analysis on Kickstarter data to uncover trends and generate insights for better understanding of campaigns
+## *Performing analysis on Kickstarter data to uncover trends and generate insights for better understanding of different campaigns in relation to their launch dates and funding goals.*
 ---
-How can your fund-raising campaign be successful? Are there any specific factors that can help a campaign to be successful? 
-To help you answer these questions and be able to plan ahead your crowdfunding I will provide you with a better understanding of different campaigns by looking into different factors that play an important role in making them.
+### **How can your fund-raising campaign be successful? Does the launch date and funding goal play an importante role in the success of a campaign?**
 ---
-I used data from different campaigns around the world, and I filtered the data to make it easier to highlight three important factors as: outcome of the campaign, goal vs. pledge amount, and the dates on which the campaign took placed.
+##Theater Outcomes vs Launch Date
+To help you answer these questions and be able to plan your crowdfunding I worked with Kickstarter Campigns data, specifically wanted to show the relation with the launch dates ann funding goals. To be able to do this, I created a pivot table that allowed me to filter the data based on the outcome, launch date and to make it easier, I also filtered to only retrieve data from the "theater" category. Instead of showing a full date, I wanted to focus on the months where the campaigns started. See the chart below to see results:
+---
+<img width="708" alt="Theater_Outcomer_vs_Launch" src="https://user-images.githubusercontent.com/70611325/93641509-3a3faa80-f9b1-11ea-8424-8a164da2ff34.png">
+---
+***Chart 1.** Line chart of the outcome based on Launched Date. By looking at the chart we can notice that campaigns started in the month of May have a greater success rate. Unlike the last quarter of the year, where we can see that there is a drecrease on the success rate, especially in the month of December.*
+---
+##Outcomes vs Goals Amount
+You will want to know if the success of your campign will depend on the actual funding goal, to review this I created a new table with goal amounts ranges of $4,999.00, starting from less than a $1000.00 to more than $50,0000.00 being the last of dollar-amount ranges, this way I grouped campaigns based on their goal amount. I wanted to look into the number of successful campaigns, failed campaigns and canceles campaigns, and to make it por specific, I ony count the subcategory of "plays". Once I had the numbers and add them up to obtain the number of total projects per dollar-amount ranges, and calculated the percentage of successful, failed, and canceled campaigns. See the chat below to visualize the relationship between the goal amount ranges and the percentage of each outcome:
+---
+<img width="648" alt="Outcomes vs Goals" src="https://user-images.githubusercontent.com/70611325/93643017-fa2df700-f9b3-11ea-952e-017afdfb6c88.png">
+---
+***Chart 2.** Line chart of the outcome based on goal amount. By looking at the chat we can notice that when the goal amount increases, campaigns often fail.*
+---
+One of the challenges I encountered working with this large data set, is that I tend to forgot what columns I had filtered and resulted in different data than the one I was looking for. Once I got it, personally I found it easier to clear the filerts once I am done using that specific filter. 
+---
+##Results:
+Based on the Theater Outcomes vs Launch Date analysis, I can conclude that:
+- The most recommended months to start a fundraising campaign is in May or June. 
+- The highest failed rate have been in the month of October, and from there the last two months of the year have the lowest success rate.
+Based on Outcomes vs Goals Amount I conlude that the campaigns with much higher goal amount are the ones that failed the most.
+What are some limitations of this dataset?
+- Some date on the blurb/description column is not readable.
+- The date from the Launched Dates and Deadline dates are presented Unix timestamps.
+- There are some extreme outliers.
+What are some other possible tables and/or graphs that we could create?
+- We could study and create a line chart to see if the amount pledge depends on the number of backers.
 
-The first thing I noticed was that the theater was the most successful category in US and other countries. We can easily see this information in the chart below:
-
-![Categories in US](https://user-images.githubusercontent.com/70611325/93519670-43624600-f8e3-11ea-9040-88f74e2ef29e.png)
-
-**Figure 1. ** Stacked column chart of the outcome of the different categories of campaigns in US. The highest column shows us that theater is the most popular and has the most successful outcomes compares to the rest of categories.
---
-Each category also has their own list of subcategories, it is really important to know which of the subcategory of theater has been more successful. I filtered again to obtain information about US and see that plays have the highest of successful outcomes. See Figure 2. for reference.
-
-![Picture2](https://user-images.githubusercontent.com/70611325/93520250-655bc880-f8e3-11ea-8630-dd79135b47b8.png)
-
-**Figure 2. ** Stacked column chart of the outcome of the different subcategories of theater in US. The highest column shows us that plays are have the most successful outcomes compares to the rest of subcategories.
---
-I wanted to provide you with the best time of the year to start a campaign, to do this I used the launched and deadline dates to calculate the length of fundraising campaigns tied with the outcome of the theater’s campaigns. See Figure 3. for reference.
-
-![Picture3](https://user-images.githubusercontent.com/70611325/93520537-7ad0f280-f8e3-11ea-9952-4b441033b82d.png)
-
-**Figure 3. ** Line chart of the outcome based on Launched Date in US. By looking at the chart that the month of May have a greater success rate.
---
-I used measures of central tendency to determine how the fundraising goals amount can affect on the outcome of their campaigns. I noticed that the campaigns with much higher goal amount are the ones that failed the most. 
---
-From this, it seems that if you want your fundraising campaign to be successful first you will need to launch it somewhere between May or June and will recommend to not last longer than 1 month. You should also consider not asking for a high goal amount, since asking for too much could probably set up for failure as the data has showed.
